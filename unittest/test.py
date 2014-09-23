@@ -22,7 +22,14 @@ validate phone
 
 class Test(unittest.TestCase):
     def validatePass(self, str):
+        passLenCheck(str)
+        upperCheck(str)
+        lowerCheck(str)
+        numCheck(str)
+        #unittest.TestCase.assertEqual(passLenCheck(str), True)
+        #etc
         pass
+
     
     def passLenCheck(self, str):
         pass
@@ -31,4 +38,7 @@ class Test(unittest.TestCase):
         pass
 
     def lowerCheck(self, str):
+        pass
+
+    def numCheck(self, str):
         pass
